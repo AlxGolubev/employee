@@ -25,10 +25,22 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'kaminari'
+gem 'responders'
+
 gem 'vuejs-rails'
+gem 'hamlit'
+gem 'bootstrap-sass'
+gem 'jquery-rails'
+gem 'coffee-rails'
+
+
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'factory_girl_rails'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'faker'
 end
 
 group :development do

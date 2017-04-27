@@ -1,0 +1,13 @@
+#app
+  %table.table.table-striped{data: {url: employee_index_path}, 'ref': 'employees-table' is: 'employees-table'}
+    %thead
+      %th{ 'v-for': 'column in tableColumns'}
+        {{ column }}
+    %tbody
+      %tr{'v-for': 'employee in employees'}
+        %td {{ employee.first_name }}
+        %td {{ employee.last_name}}
+        %td {{ employee.department}}
+        %td {{ employee.level }}
+
+
